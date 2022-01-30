@@ -18,6 +18,7 @@ header{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 }
 
 .nav-list{
@@ -28,6 +29,9 @@ header{
     margin-left: 24px;
   }
 
+  @include responsive(){
+    display: none;
+  }
 }
 
 .logo{
@@ -69,6 +73,10 @@ header{
 .nav-social{
   display: flex;
 
+  @include responsive(){
+    display: none;
+  }
+
   svg{
     cursor: pointer;
     margin-left: 16px;
@@ -79,11 +87,23 @@ header{
     }
 
     &:hover{
-
       path, circle{
         fill: $red-light;
         transform: translate3d(0,-3px,0);
       }
     }
+  }
+}
+
+.bx{
+  display: none;
+
+  @include responsive(){
+    display: block;
+    width: 48px;
+    height: 48px;
+  
+    background-color: $white;
+    border-radius: 8px;
   }
 }

@@ -3,12 +3,20 @@
 .container{
   max-width: 1440px;
   margin: 0 auto;
-  padding: 36 16px;
+  padding: 36px 16px;
 
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center;  
+  height: 100vh;
   overflow: hidden;
+
+  @include responsive(){
+    flex-direction: column;
+    height: auto;
+    overflow: auto;
+  }
+
 }
 
 .container-item-1{
@@ -19,21 +27,26 @@
   align-items: flex-start;
 }
 
-/*.container-item-2{
-
-}*/
-
 .spider-man{
   width: 140%;
   transform: translate3d(-170px,0,0);
+
+  @include responsive(){
+    width: 100%;
+    transform: translate3d(0,0,0);
+  }
 }
 
-.container-buttons{
-  width: 100%;
-
+.flex{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+}
+
+.w-auto{
+  width: auto;
+}
+
+.align-items-center{
+  align-items: center;
 }
 
 .btn{

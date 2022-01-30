@@ -11,7 +11,7 @@ import instagram from './images/icon-instagram.svg';
 import youtube from './images/icon-youtube.svg';
 import twitter from './images/icon-twitter.svg';
 
-import './styles/styles.scss'
+import './styles/styles.css'
 
 export default function App() {
   return (
@@ -37,31 +37,32 @@ export default function App() {
             <ReactSVG src={youtube} alt="youtube" />
             <ReactSVG src={twitter} alt="twitter" />
           </div>
+          <div className='bx mr-3'></div>
         </nav>
       </header>
 
       <section className="container">
         <div className="container-item-1">
 
-          <div>
+          <div className="px-1">
             <img src={titles} alt="titles" />
           </div>
 
-          <p>
+          <p className='my-2'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Iaculis velit magna vitae mauris orci fames posuere nibh.
             Sit tellus amet facilisi sit odio pulvinar scelerisque quam et.
             Ultrices facilisis nunc massa diam, quis mi imperdiet.
           </p>
 
-          <div className='container-buttons'>
+          <div>
             <div className="btn">Pre-order now</div>
-            <div className="btn-secondary">Watch the teaser</div>
+            <div className="ml-2 btn-secondary">Watch the teaser</div>
           </div>
 
-          <div>
-            <img src={playstation} alt="playstation" />
-            <img src={marvel} alt="marvel" />
+          <div className='mt-2 flex align-items-center'>
+            <img src={playstation} alt="playstation" className='w-auto'/>
+            <img src={marvel} alt="marvel" className='w-auto ml-2'/>
           </div>
         </div>
 
