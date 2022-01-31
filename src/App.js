@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactSVG } from 'react-svg'
+import Tilty from 'react-tilty'
 
 import logo from './images/logo.svg';
 import titles from './images/titles.png';
@@ -10,6 +11,7 @@ import facebook from './images/icon-facebook.svg';
 import instagram from './images/icon-instagram.svg';
 import youtube from './images/icon-youtube.svg';
 import twitter from './images/icon-twitter.svg';
+import video from './video/spiderman2.mp4';
 
 import './styles/styles.css'
 
@@ -41,7 +43,17 @@ export default function App() {
         </nav>
       </header>
 
-      <section className="container">
+      <section className="bg-video">
+        <video
+          className="video"
+          src={video}
+          autoPlay
+          loop
+          muted
+          typeof='video/mp4'></video>
+      </section>
+
+      <section className="container mt-2">
         <div className="container-item-1">
 
           <div className="px-1">
@@ -61,13 +73,15 @@ export default function App() {
           </div>
 
           <div className='mt-2 flex align-items-center'>
-            <img src={playstation} alt="playstation" className='w-auto'/>
-            <img src={marvel} alt="marvel" className='w-auto ml-2'/>
+            <img src={playstation} alt="playstation" className='w-auto' />
+            <img src={marvel} alt="marvel" className='w-auto ml-2' />
           </div>
         </div>
 
         <div className="container-item-2">
-          <img src={hero} alt="hero" className='spider-man' />
+          <Tilty scale={1.05} perspective={2000}>
+            <img src={hero} alt="hero" className='spider-man' />
+          </Tilty>
         </div>
       </section>
     </main>

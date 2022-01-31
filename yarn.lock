@@ -6983,6 +6983,11 @@ react-svg@^14.1.9:
     "@types/prop-types" "^15.7.4"
     prop-types "^15.8.1"
 
+react-tilty@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-tilty/-/react-tilty-2.0.3.tgz#b88c590c20fc70b69c7bd80d209c6ddeed0c61f9"
+  integrity sha512-/z23wWNndBpo6bMl5ktVj+Ght1bn+IMjSBIlCn7Fd3Te51MiSU/MRPcyefa6ghK01SxCO0ISf5xaVfTcjdTOag==
+
 react@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
