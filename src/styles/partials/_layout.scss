@@ -28,8 +28,8 @@
 }
 
 .spider-man{
-  width: 120%;
-  transform: translate3d(-170px,0,0);
+  width: 110%;
+  transform: translate3d(-150px,0,0);
 
   @include responsive(){
     width: 100%;
@@ -172,4 +172,18 @@
     display: block;
     background: linear-gradient(101.47deg, #0a0c10 26.38%, rgba(10, 12, 16, 0.8) 50.07%, #0a0c10 73.17%);
   }
+}
+
+.bg-loader{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(255deg, $red 0%, $red-dark 100% );
+  overflow: hidden;
 }
